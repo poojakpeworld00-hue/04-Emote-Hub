@@ -30,7 +30,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.fffemotes.skintools.master"
+        applicationId = "com.fffskins.emotes.tools.fffhub"
         minSdk = 26
         targetSdk = 37
         versionCode = 1
