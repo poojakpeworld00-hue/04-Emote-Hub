@@ -61,47 +61,67 @@
                 android:src="@drawable/ic_back"
                 app:tint="@color/sh_muted" />
 
+            <!-- Cyan Dark step header: progress ring with the step number, then the step name and steps left. -->
             <LinearLayout
                 android:id="@+id/tracker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_2sdp"
-                android:orientation="vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:baselineAligned="true">
+                <FrameLayout
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp">
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:max="13"
+                        app:indicatorColor="@color/sh_primary"
+                        app:indicatorSize="@dimen/_30sdp"
+                        app:trackColor="@color/sh_track"
+                        app:trackCornerRadius="2dp"
+                        app:trackThickness="3dp"
+                        app:indicatorTrackGapSize="0dp" />
 
                     <TextView
                         android:id="@+id/stepNum"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/sora_extrabold"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/brand_extrabold"
                         android:includeFontPadding="false"
-                        android:letterSpacing="-0.04"
-                        android:textColor="@color/sh_primary"
-                        android:textSize="@dimen/_22ssp"
-                        app:fontFamily="@font/sora_extrabold" />
+                        android:textColor="@color/sh_text"
+                        android:textSize="@dimen/_10ssp"
+                        app:fontFamily="@font/brand_extrabold" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stepName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/brand_bold"
+                        android:textColor="@color/sh_text"
+                        android:textSize="@dimen/_11ssp"
+                        app:fontFamily="@font/brand_bold" />
 
                     <TextView
                         android:id="@+id/stepTotal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_2sdp"
-                        android:textColor="@color/sh_dim"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:textColor="@color/sh_muted"
+                        android:textSize="@dimen/_8ssp" />
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/stepName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_2sdp"
-                    android:textColor="@color/sh_muted"
-                    android:textSize="@dimen/_10ssp"
-                    android:textStyle="bold" />
             </LinearLayout>
 
             <Space
@@ -122,20 +142,6 @@
                 android:textSize="@dimen/_10ssp"
                 android:textStyle="bold" />
         </LinearLayout>
-
-        <com.google.android.material.progressindicator.LinearProgressIndicator
-            android:id="@+id/progress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_17sdp"
-            android:layout_marginTop="@dimen/_7sdp"
-            android:max="13"
-            app:indicatorColor="@color/sh_primary"
-            app:trackColor="#1AFFFFFF"
-            app:trackCornerRadius="2dp"
-            app:trackStopIndicatorSize="0dp"
-            app:indicatorTrackGapSize="0dp"
-            app:trackThickness="3dp" />
 
         <LinearLayout
             android:id="@+id/body"

@@ -95,7 +95,9 @@
     <string name="tool_calculator">Kalkulator</string>
     <string name="settings">Pengaturan</string>
     <string name="language">Bahasa</string>
-    <string name="explore_today">Apa yang ingin kamu jelajahi hari ini?</string>
+    <string name="home_welcome">Selamat datang kembali</string>
+    <string name="home_style">Temukan <b>gayamu</b></string>
+    <string name="home_explore">Jelajahi</string>
     <string name="tools_guides">Alat &amp; panduan</string>
     <string name="tool_tips_sub">Panduan pro untuk setiap match</string>
     <string name="tool_maps_sub">Titik drop &amp; rute</string>

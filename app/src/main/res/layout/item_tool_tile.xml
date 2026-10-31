@@ -1,53 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Cyan Dark tool card: an accent strip with the tool's icon on top, then its name and subtitle. -->
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/SH.Bento"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:layout_weight="1"
-    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardBackgroundColor="@color/sh_card"
+    app:cardCornerRadius="@dimen/_15sdp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/sh_card"
-        android:gravity="center_vertical"
-        android:minHeight="@dimen/_52sdp"
-        android:padding="@dimen/_7sdp">
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/icon"
-            android:layout_width="@dimen/_33sdp"
-            android:layout_height="@dimen/_33sdp"
-            android:background="@drawable/bg_tool_icon"
-            android:importantForAccessibility="no"
-            android:padding="@dimen/_8sdp" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/bg_feature_wash">
 
-        <LinearLayout
-            android:layout_width="0dp"
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_7sdp"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/brand_bold"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/sh_text"
+            android:textSize="@dimen/_10ssp"
+            app:fontFamily="@font/brand_bold" />
 
-            <TextView
-                android:id="@+id/name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textAlignment="viewStart"
-                android:textColor="@color/sh_text"
-                android:textSize="@dimen/_10ssp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/sub"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="viewStart"
-                android:textColor="@color/sh_muted"
-                android:textSize="@dimen/_8ssp" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/sh_muted"
+            android:textSize="@dimen/_8ssp" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

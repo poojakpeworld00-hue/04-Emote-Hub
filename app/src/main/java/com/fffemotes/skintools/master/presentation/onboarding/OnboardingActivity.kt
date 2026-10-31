@@ -574,8 +574,8 @@ class OnboardingActivity : AppCompatActivity(), SystemKeyTarget {
             b.tracker.visibility = if (obNumber > 0) View.VISIBLE else View.INVISIBLE
             b.progress.visibility = b.tracker.visibility
             b.progress.max = obSteps.size.coerceAtLeast(1)
-            b.stepNum.text = "%02d".format(obNumber)
-            b.stepTotal.text = "/${obSteps.size}"
+            b.stepNum.text = obNumber.toString()
+            b.stepTotal.text = (obSteps.size - obNumber).let { resources.getQuantityString(R.plurals.sh_to_go, it, it) }
             if (obNumber > 0) b.progress.setProgressCompat(obNumber, !first)
             b.title.updatePadding(top = resources.getDimensionPixelSize(if (hasBanner) SdpR.dimen._30sdp else SdpR.dimen._10sdp))
             b.skip.visibility = if (if (step.key == DEFAULT_HOME_KEY) viewModel.defaultHomeSkipButton else viewModel.skipButton) View.VISIBLE else View.GONE

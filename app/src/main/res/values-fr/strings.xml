@@ -95,7 +95,9 @@
     <string name="tool_calculator">Calculatrice</string>
     <string name="settings">Paramètres</string>
     <string name="language">Langue</string>
-    <string name="explore_today">Que veux-tu explorer aujourd\'hui ?</string>
+    <string name="home_welcome">Bon retour</string>
+    <string name="home_style">Trouvons ton <b>style</b></string>
+    <string name="home_explore">Explorer</string>
     <string name="tools_guides">Outils &amp; guides</string>
     <string name="tool_tips_sub">Guides pro pour chaque partie</string>
     <string name="tool_maps_sub">Zones de saut &amp; itinéraires</string>

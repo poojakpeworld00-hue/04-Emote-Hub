@@ -1,0 +1,4 @@
+<!-- Cyan Dark Home banner: accent wash on the right of the featured card (design 135deg, 25% → 5%). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:angle="315" android:startColor="#4022D3EE" android:endColor="#0D22D3EE" />
+</shape>

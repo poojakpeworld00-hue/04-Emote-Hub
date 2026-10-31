@@ -95,7 +95,9 @@
     <string name="tool_calculator">Máy tính</string>
     <string name="settings">Cài đặt</string>
     <string name="language">Ngôn ngữ</string>
-    <string name="explore_today">Hôm nay bạn muốn khám phá gì?</string>
+    <string name="home_welcome">Chào mừng trở lại</string>
+    <string name="home_style">Cùng tìm <b>phong cách</b> của bạn</string>
+    <string name="home_explore">Khám phá</string>
     <string name="tools_guides">Công cụ &amp; hướng dẫn</string>
     <string name="tool_tips_sub">Hướng dẫn pro cho mọi trận</string>
     <string name="tool_maps_sub">Điểm nhảy &amp; lộ trình</string>

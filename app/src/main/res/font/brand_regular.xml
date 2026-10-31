@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DM Sans 400 (SIL Open Font License), from the variable font. -->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font android:font="@font/dmsans" android:fontStyle="normal" android:fontWeight="400"
+        android:fontVariationSettings="'wght' 400"
+        app:font="@font/dmsans" app:fontStyle="normal" app:fontWeight="400" app:fontVariationSettings="'wght' 400" />
+</font-family>

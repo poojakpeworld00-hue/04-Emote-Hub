@@ -27,7 +27,7 @@ import com.fffemotes.skintools.master.presentation.settings.SettingsActivity
 import com.intuit.sdp.R as SdpR
 
 /**
- * The Home screen's content (Claude Design "Skin Hub Onboarding v2"): tiles, tools, animations and its ads. Shared by
+ * The Home screen's content (Claude Design "Skin Hub Variants", Cyan Dark): banner, categories, tools, animations and its ads. Shared by
  * [HomeActivity] and the launcher's swipe-right panel (HostPanelFragment), as the reference app shares its HomeScreen.
  */
 class HomeContent(
@@ -49,7 +49,7 @@ class HomeContent(
 
     fun bind() {
         b.settings.setOnClickListener { open("settings") { Intent(activity, SettingsActivity::class.java) } }
-        b.headline.text = activity.getText(R.string.explore_today).accentBold(b.headline)
+        b.headline.text = activity.getText(R.string.home_style).accentBold(b.headline)
         b.glow.glowPulse()
 
         // 2×2 grid of tool cards.
@@ -67,15 +67,16 @@ class HomeContent(
             }
         }
         mapOf(
-            b.tileCharacters to CatalogType.CHARACTERS, b.tileBundles to CatalogType.BUNDLES, b.tileEmotes to CatalogType.EMOTES,
-            b.tileWeapons to CatalogType.WEAPONS, b.tilePets to CatalogType.PETS, b.tileVehicles to CatalogType.VEHICLES,
+            b.tileCharacters to CatalogType.CHARACTERS, b.catCharacters to CatalogType.CHARACTERS, b.tileBundles to CatalogType.BUNDLES,
+            b.tileEmotes to CatalogType.EMOTES, b.tileWeapons to CatalogType.WEAPONS, b.tilePets to CatalogType.PETS,
+            b.tileVehicles to CatalogType.VEHICLES,
         ).forEach { (tile, catalog) ->
             tile.setOnClickListener { open(catalog.name.lowercase()) { ListActivity.intent(activity, catalog) } }
         }
         bindAds()
 
         // Staggered entrance, as in the design's hcUp keyframes.
-        listOf(b.header, b.tileCharacters, b.tileBundles, b.tileEmotes, b.tileWeapons, b.tilePets, b.tileVehicles, b.toolsTitle, b.tools)
+        listOf(b.header, b.tileCharacters, b.cats, b.toolsTitle, b.tools)
             .forEachIndexed { i, v -> v.enter(i * 70L) }
 
         b.tileCharactersArt.loop("translationY", -resources.getDimension(SdpR.dimen._6sdp), 2000, 1000)

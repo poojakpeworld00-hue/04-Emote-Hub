@@ -95,7 +95,9 @@
     <string name="tool_calculator">Rechner</string>
     <string name="settings">Einstellungen</string>
     <string name="language">Sprache</string>
-    <string name="explore_today">Was möchtest du heute entdecken?</string>
+    <string name="home_welcome">Willkommen zurück</string>
+    <string name="home_style">Finde deinen <b>Style</b></string>
+    <string name="home_explore">Entdecken</string>
     <string name="tools_guides">Tools &amp; Guides</string>
     <string name="tool_tips_sub">Profi-Guides für jedes Match</string>
     <string name="tool_maps_sub">Landepunkte &amp; Routen</string>

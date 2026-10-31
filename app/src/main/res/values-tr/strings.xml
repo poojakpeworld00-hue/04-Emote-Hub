@@ -95,7 +95,9 @@
     <string name="tool_calculator">Hesap makinesi</string>
     <string name="settings">Ayarlar</string>
     <string name="language">Dil</string>
-    <string name="explore_today">Bugün neyi keşfetmek istersin?</string>
+    <string name="home_welcome">Tekrar hoş geldin</string>
+    <string name="home_style"><b>Tarzını</b> bulalım</string>
+    <string name="home_explore">Keşfet</string>
     <string name="tools_guides">Araçlar ve rehberler</string>
     <string name="tool_tips_sub">Her maç için profesyonel rehberler</string>
     <string name="tool_maps_sub">İniş noktaları ve rotalar</string>

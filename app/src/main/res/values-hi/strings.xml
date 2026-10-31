@@ -95,7 +95,9 @@
     <string name="tool_calculator">कैलकुलेटर</string>
     <string name="settings">सेटिंग्स</string>
     <string name="language">भाषा</string>
-    <string name="explore_today">आज आप क्या एक्सप्लोर करना चाहते हैं?</string>
+    <string name="home_welcome">फिर से स्वागत है</string>
+    <string name="home_style">अपना <b>स्टाइल</b> खोजें</string>
+    <string name="home_explore">देखें</string>
     <string name="tools_guides">टूल्स और गाइड</string>
     <string name="tool_tips_sub">हर मैच के लिए प्रो गाइड</string>
     <string name="tool_maps_sub">ड्रॉप स्पॉट और रूट</string>

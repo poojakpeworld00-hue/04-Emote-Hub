@@ -3,20 +3,22 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Design tokens from Claude Design "Skin Hub Onboarding v2" (dark only, Rose accent). -->
-    <color name="sh_bg">#0B0C10</color>
-    <color name="sh_card">#14161D</color>
-    <color name="sh_card2">#1A1C23</color>
-    <color name="sh_text">#F4F5F7</color>
-    <color name="sh_muted">#9AA0AA</color>
-    <color name="sh_dim">#5A5F6A</color>
-    <color name="sh_primary">#FF3B5C</color>
-    <color name="sh_accent">#E0234A</color>
+    <!-- Design tokens from Claude Design "Skin Hub Variants", Cyan Dark (dark only, neon cyan accent). -->
+    <color name="sh_bg">#081016</color>
+    <color name="sh_card">#101B23</color>
+    <color name="sh_card2">#16232C</color>
+    <color name="sh_text">#EAF6FA</color>
+    <color name="sh_muted">#8FA3AE</color>
+    <color name="sh_dim">#56707C</color>
+    <color name="sh_primary">#22D3EE</color>
+    <color name="sh_accent">#0EA5C4</color>
+    <!-- Text and icons on the cyan accent (selected options, buttons). -->
+    <color name="sh_on_primary">#04141A</color>
     <!-- Accent at 14% over the card. -->
-    <color name="sh_chip">#3A1B24</color>
-    <color name="sh_border">#24262D</color>
-    <color name="sh_track">#24262C</color>
-    <color name="sh_glow">#73FF3B5C</color>
-    <color name="sh_panel">#14161D</color>
-    <color name="sh_splash">#0B0C10</color>
+    <color name="sh_chip">#13353F</color>
+    <color name="sh_border">#2422D3EE</color>
+    <color name="sh_track">#1C2A33</color>
+    <color name="sh_glow">#5922D3EE</color>
+    <color name="sh_panel">#101B23</color>
+    <color name="sh_splash">#081016</color>
 </resources>
